@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+          <header>
+              <h1 id="title">Favorite Programming Language Survey Form</h1>
+              <p id="description">Which programming language do you prefer?</p>
+          </header>
+            <div class="content">
+              <form id="survey-form" name="FreeCodeCamp2ndProject" method="post" action="">
+                <div class="personal_data">
+                  <fieldset>
+                      <legend>Data personal</legend>
+                      <div>
+                        <label id="name-label" for="name">Name:
+                            <input id="name" type="text" name="txtname" class="data_personal" placeholder="Your name here" size="100" title="Your name." required></label>
+                      </div>
+                      <div>
+                        <label id="email-label" for="email">eMail:
+                            <input id="email" type="email" class="data_personal" placeholder="email address" required></label>
+                        <label id="number-label" for="age">Age(Optional):
+                            <input id="number" type="number" class="data_personal" placeholder="Your age" min="1" max="80"></label><br>
+                      </div>
+                      <label for="instruction">Which option best describes your level of instruction?
+                      <select id="dropdown" name="education">
+                          <option value="elementary">Elementary School</option>
+                          <option value="estsecundaria">High School Student</option>
+                          <option value="secundaria">High School Graduate</option>
+                          <option value="universidad">University Student</option>
+                          <option value="universitario">University Graduate</option>
+                          <option value="universitario">University Ungraduate</option>
+                          <option value="master">Master</option>
+                          <option value="phd">PhD</option>
+                          </select></label>
+                      <div id="gender" class="gender_container">
+                          <label for="Gender">Gender:</label>
+                          <div id="gender_radio_bt" class="gender_option_cont">
+                              <label class="rb_container">Male<input type="radio" name="Gender" value="Male" checked>
+                                <span class="radio_sp"></span></label>
+                              <label class="rb_container">Female<input type="radio" name="Gender" value="Female">
+                                <span class="radio_sp"></span></label>
+                              <label class="rb_container">Other<input type="radio" name="Gender" value="Other">
+                                <span class="radio_sp"></span></label>
+                          </div>
+                      </div>
+                  </fieldset>
+                </div>
+                <div>
+                  <fieldset>
+                      <div id="languages" class="checkbox_container">
+                        <label for="languages">What are your preferred programming languages?</label>
+                        <div class="languages_container">
+                          <div class="checkbox">
+                            <input type="checkbox" name="chkLanguages" value="asp" id="asp">
+                            <label class="chkbox_label" for="asp">ASP.Net</label>
+                            <input type="checkbox" name="chkLanguages" value="assembly" id="assembly">
+                            <label class="chkbox_label" for="assembly">Assembly</label>
+                            <input type="checkbox" name="chkLanguages" value="c" id="c">
+                            <label class="chkbox_label" for="c">C</label>
+                            <input type="checkbox" name="chkLanguages" value="cplus" id="cplus">
+                            <label class="chkbox_label" for="cplus">C++</label>
+                            <input type="checkbox" name="chkLanguages" value="cs" id="cs">
+                            <label class="chkbox_label" for="cs">C#</label>
+                            <input type="checkbox" name="chkLanguages" value="delphi" id="delphi">
+                            <label class="chkbox_label" for="delphi">Delphi</label>
+                            <input type="checkbox" name="chkLanguages" value="go" id="go">
+                            <label class="chkbox_label" for="go">Go Lang</label>
+                            <input type="checkbox" name="chkLanguages" value="groovy" id="groovy">
+                            <label class="chkbox_label" for="go">Groovy</label>
+                            <input type="checkbox" name="chkLanguages" value="haskel" id="haskel">
+                            <label class="chkbox_label" for="haskel">Haskel</label>
+                            <input type="checkbox" name="chkLanguages" value="java" id="java">
+                            <label class="chkbox_label" for="java">Java</label>
+                            <input type="checkbox" name="chkLanguages" value="javascript" id="javascript">
+                            <label class="chkbox_label" for="Javascript">Javascript</label>
+                            <input type="checkbox" name="chkLanguages" value="perl" id="perl">
+                            <label class="chkbox_label" for="perl">Perl</label>
+                            <input type="checkbox" name="chkLanguages" value="php" id="php">
+                            <label class="chkbox_label" for="php">PHP</label>
+                            <input type="checkbox" name="chkLanguages" value="python" id="python">
+                            <label class="chkbox_label" for="python">Python</label>
+                            <input type="checkbox" name="chkLanguages" value="ruby" id="ruby">
+                            <label class="chkbox_label" for="ruby">Ruby</label>
+                            <input type="checkbox" name="chkLanguages" value="r" id="r">
+                            <label class="chkbox_label" for="r">R LAng</label>
+                            <input type="checkbox" name="chkLanguages" value="swift" id="swift">
+                            <label class="chkbox_label" for="swift">Swift</label>
+                            <input type="checkbox" name="chkLanguages" value="visualbasic" id="visualbasic">
+                            <label class="chkbox_label" for="visualbasic">VisualBasic</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="textarea_container">
+                        <label>Any comments or suggestions?</label>
+                        <textarea name="textarea" rows="5" cols="100" class="textarea" placeholder="Enter your comments here..."></textarea>
+                      </div>
+                      <button type="submit" name="Submit" id="submit">Submit</button>
+                  </fieldset>
+              </div>
+          </form>
+            </div>
+        </div>
+    </body>
+</html>
